@@ -1,9 +1,13 @@
-import './App.css';
-import TodosPage from './pages/Todos';
+import "./App.css";
+import TodosPage from "./pages/Todos.page";
 
 function App() {
   return (
-    <TodosPage />
+    <>
+    {/* #TODO ajouter une navbar */}
+      <h1>Ma super App</h1>
+      <TodosPage />
+    </>
   );
 }
 
