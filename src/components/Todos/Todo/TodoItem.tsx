@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Todo } from '../../../modeles/Todo.type'
 
 // Typage des props de React en TS
@@ -8,7 +9,7 @@ type TodoProps = {
 
 const TodoItem = ({todo}: TodoProps) => {
   return (
-    <li>{todo.title} {todo.completed ? '✔' : '❌'}</li>
+    <li><NavLink to={`/todos/${todo.id}`}>{todo.title}</NavLink> {todo.completed ? '✔' : '❌'}</li>
   )
 }
 

@@ -5,11 +5,22 @@ const API_URL = "https://jsonplaceholder.typicode.com/todos";
 class TodoService {
 
     /**
-     * Récupère une tache
+     * Récupère toutes les taches
      * @returns Promise
      */
     getTaches(): Promise<Response>{
         const promesse = fetch(API_URL, {method: 'GET'});
+        return promesse;
+    }
+
+
+    /**
+     * Récupère une tache
+     * @returns Promise
+     */
+    getTache(todoId: number): Promise<Response>{
+        console.log(`${API_URL}/${todoId}`)
+        const promesse = fetch(`${API_URL}/${todoId}`, {method: 'GET'});
         return promesse;
     }
 

@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import TodoDetail from "../../pages/TodoDetail";
 import TodosPage from "../../pages/Todos.page";
 import UserPage from "../../pages/User.page";
 
@@ -29,6 +30,13 @@ const Routing = ({children}: RoutingProps) => {
         </Route>
         <Route exact path="/users">
           <UserPage />
+        </Route>
+        {/* Route avec un paramètre
+          le paramaètre est nommé "todoId"
+          on peut le récupérer avec useParams() de react-router-dom
+        */}
+        <Route path="/todos/:todoId">
+          <TodoDetail />
         </Route>
       </Switch>
     </Router>
