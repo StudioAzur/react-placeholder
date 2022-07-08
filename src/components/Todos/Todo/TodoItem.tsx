@@ -8,7 +8,7 @@ type TodoProps = {
 
 const TodoItem = ({todo}: TodoProps) => {
   return (
-    <li>{todo.title}</li>
+    <li>{todo.title} {todo.completed ? '✔' : '❌'}</li>
   )
 }
 

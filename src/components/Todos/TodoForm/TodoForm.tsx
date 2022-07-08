@@ -1,7 +1,5 @@
 import {
     ChangeEvent,
-  ChangeEventHandler,
-  FormEvent,
   FormEventHandler,
   FunctionComponent,
   ReactElement,

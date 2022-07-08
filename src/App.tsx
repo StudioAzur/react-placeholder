@@ -1,15 +1,12 @@
 import "./App.css";
-import UserPage from "./pages/User.page";
-// import TodosPage from "./pages/Todos.page";
+import NavBar from "./components/commons/NavBar";
+import Routing from "./components/commons/Routing";
 
 function App() {
   return (
-    <>
-    {/* #TODO ajouter une navbar */}
-      {/* <h1>Ma super App</h1>
-      <TodosPage /> */}
-      <UserPage />
-    </>
+    <Routing>
+      <NavBar></NavBar>
+    </Routing>
   );
 }
 
